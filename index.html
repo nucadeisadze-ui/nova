@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexusAI &mdash; Next-Gen Autonomous AI Orchestration</title>
+  <meta name="description" content="Deploy, scale, and orchestrate autonomous AI multi-agent workflows in real time with enterprise-grade security and sub-millisecond precision.">
+  <meta name="keywords" content="AI, Autonomous Agents, Orchestration, Machine Learning, Workflow Automation, NexusAI">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" id="brand-logo" aria-label="NexusAI Homepage">
+        <div class="logo-icon-wrapper">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+        </div>
+        <span class="brand-text">Nexus<span class="accent-text">AI</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active" id="nav-link-hero">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link" id="nav-link-features">Features</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA & Mobile Hamburger -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta" id="nav-cta-btn">
+          <span>Get Started</span>
+          <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="section-container hero-container">
+        
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="badge-wrapper">
+            <span class="badge" id="hero-release-badge">
+              <span class="badge-pulse"></span>
+              <span class="badge-text">Nexus 3.0 Engine is Live</span>
+              <svg class="badge-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Supercharge Workflows with <span class="gradient-text">Autonomous AI</span> Orchestration
+          </h1>
+
+          <p class="hero-description">
+            Design, deploy, and monitor collaborative multi-agent swarms in real time. Automate complex operational logic with sub-millisecond neural execution and enterprise-grade resilience.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-lg btn-primary" id="hero-primary-cta">
+              <span>Start Free Trial</span>
+              <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-lg btn-secondary" id="hero-secondary-cta">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>Explore Platform</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges / Social Proof -->
+          <div class="hero-trust">
+            <div class="trust-avatars">
+              <span class="avatar av-1">AI</span>
+              <span class="avatar av-2">ML</span>
+              <span class="avatar av-3">OPS</span>
+              <span class="avatar av-4">+4k</span>
+            </div>
+            <div class="trust-text">
+              <div class="rating-stars" aria-label="5 star rating">★★★★★</div>
+              <p>Trusted by <strong>4,200+</strong> engineering teams worldwide</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Interactive Showcase Mockup -->
+        <div class="hero-visual" id="hero-visual-card">
+          <div class="glass-card mockup-card">
+            
+            <!-- Window header -->
+            <div class="mockup-header">
+              <div class="window-controls">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="mockup-tab-title">nexus-orchestrator.agent.py</div>
+              <div class="mockup-status">
+                <span class="status-indicator live"></span>
+                <span class="status-text">Active Pipeline</span>
+              </div>
+            </div>
+
+            <!-- Terminal / Workflow Console Body -->
+            <div class="mockup-body">
+              <div class="pipeline-graph">
+                <div class="agent-node node-source">
+                  <div class="node-icon">📡</div>
+                  <div class="node-info">
+                    <span class="node-name">Data Ingest</span>
+                    <span class="node-sub">Kafka &bull; 48k eps</span>
+                  </div>
+                  <span class="node-badge">Ready</span>
+                </div>
+
+                <div class="pipeline-connector">
+                  <div class="connector-line"></div>
+                  <span class="packet packet-1"></span>
+                  <span class="packet packet-2"></span>
+                </div>
+
+                <div class="agent-node node-core active-node">
+                  <div class="node-icon">🧠</div>
+                  <div class="node-info">
+                    <span class="node-name">Nexus Swarm v3</span>
+                    <span class="node-sub">4 Co-agents reasoning</span>
+                  </div>
+                  <span class="node-badge active-badge">Processing</span>
+                </div>
+
+                <div class="pipeline-connector">
+                  <div class="connector-line"></div>
+                  <span class="packet packet-3"></span>
+                </div>
+
+                <div class="agent-node node-target">
+                  <div class="node-icon">⚡</div>
+                  <div class="node-info">
+                    <span class="node-name">Auto Execution</span>
+                    <span class="node-sub">API &bull; Zero human delay</span>
+                  </div>
+                  <span class="node-badge success-badge">Resolved</span>
+                </div>
+              </div>
+
+              <!-- Real-time metrics grid -->
+              <div class="mockup-metrics">
+                <div class="metric-item">
+                  <span class="metric-label">Latency</span>
+                  <span class="metric-value highlight-cyan" id="metric-latency">8.4 ms</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Accuracy Rate</span>
+                  <span class="metric-value highlight-green">99.94%</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Throughput</span>
+                  <span class="metric-value highlight-purple" id="metric-throughput">14,280/s</span>
+                </div>
+              </div>
+
+              <!-- Interactive prompt simulator -->
+              <div class="prompt-bar">
+                <span class="prompt-prefix">&gt;</span>
+                <span class="prompt-typing" id="interactive-terminal-text">Orchestrating autonomous customer triage swarm...</span>
+                <span class="cursor-blink">|</span>
+              </div>
+            </div>
+
+            <!-- Floating decoration badge -->
+            <div class="floating-stat-pill pill-top">
+              <span class="pill-icon">🚀</span>
+              <div>
+                <strong>+340%</strong>
+                <span>Velocity</span>
+              </div>
+            </div>
+
+            <div class="floating-stat-pill pill-bottom">
+              <span class="pill-icon">🛡️</span>
+              <div>
+                <strong>SOC2 Type II</strong>
+                <span>Certified</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <div class="section-container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">About NexusAI</span>
+          <h2 class="section-title">Built for Pioneers Who Shape Tomorrow</h2>
+          <p class="section-lead">
+            We founded NexusAI with an uncompromising mission: intelligent automation shouldn't require complex infrastructure or months of custom glue code.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story / Narrative Card -->
+          <div class="about-card story-card glass-card">
+            <div class="card-glow-accent"></div>
+            <div class="story-tag">Our Mission &amp; Vision</div>
+            <h3 class="story-headline">Democratizing Next-Gen Multi-Agent Systems</h3>
+            <p class="story-paragraph">
+              Traditional automation scripts break when environments shift. NexusAI introduces autonomous cognitive loops that understand intent, handle unexpected edge cases, and self-heal in production environments.
+            </p>
+            <p class="story-paragraph">
+              By uniting distributed AI models with real-time API executors, engineering teams shift from manually managing pipelines to simply orchestrating outcomes.
+            </p>
+
+            <ul class="value-checklist">
+              <li class="checklist-item">
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Zero infrastructure maintenance with our fully managed serverless runtime.</span>
+              </li>
+              <li class="checklist-item">
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Deterministic safety boundaries preventing rogue agent executions.</span>
+              </li>
+              <li class="checklist-item">
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full audit trails, version control, and multi-cloud portability.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Value Proposition / Stats Grid -->
+          <div class="about-stats-container">
+            <div class="stat-card glass-card">
+              <div class="stat-number gradient-text" data-target="99.98">99.98%</div>
+              <div class="stat-label">Automation Uptime</div>
+              <p class="stat-desc">Guaranteed high-availability SLA across distributed nodes.</p>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-number gradient-text" data-target="10">10x</div>
+              <div class="stat-label">Faster Deployment</div>
+              <p class="stat-desc">From initial concept to production agent in under 15 minutes.</p>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-number gradient-text" data-target="50">50M+</div>
+              <div class="stat-label">Tasks Automated Daily</div>
+              <p class="stat-desc">Powering mission-critical operations with zero human lag.</p>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-number gradient-text" data-target="250">250+</div>
+              <div class="stat-label">Enterprise Connectors</div>
+              <p class="stat-desc">Seamless hooks into Salesforce, AWS, GitHub, Slack, and SQL.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION (Exactly 3 Cards) -->
+    <section class="features-section" id="features">
+      <div class="section-container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Core Capabilities</span>
+          <h2 class="section-title">Engineered for Unrivaled Performance</h2>
+          <p class="section-lead">
+            Explore the three architectural pillars that make NexusAI the industry standard for autonomous agent coordination.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <!-- Feature Card 1 -->
+          <div class="feature-card glass-card" id="feature-card-1">
+            <div class="feature-card-inner">
+              <div class="feature-icon-box icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"></path>
+                  <path d="M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6z"></path>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <span class="feature-tag">Agentic Swarms</span>
+              <h3 class="feature-title">Autonomous Multi-Agent Swarms</h3>
+              <p class="feature-description">
+                Deploy specialized agent ensembles that negotiate tasks, inspect their own code, self-correct errors, and execute complex pipelines without constant human prompting.
+              </p>
+              <div class="feature-highlight">
+                <svg class="spark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                <span>Zero-Latency Inter-Agent Routing</span>
+              </div>
+            </div>
+            <div class="card-border-glow"></div>
+          </div>
+
+          <!-- Feature Card 2 -->
+          <div class="feature-card glass-card" id="feature-card-2">
+            <div class="feature-card-inner">
+              <div class="feature-icon-box icon-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <span class="feature-tag">Speed &amp; Scale</span>
+              <h3 class="feature-title">Sub-Millisecond Neural Engine</h3>
+              <p class="feature-description">
+                Handle millions of streaming vectors and events effortlessly. Our edge-optimized inference cache reduces roundtrip execution latency by up to 85% compared to raw LLM calls.
+              </p>
+              <div class="feature-highlight">
+                <svg class="spark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                <span>Edge Caching &amp; Vector Indexing</span>
+              </div>
+            </div>
+            <div class="card-border-glow"></div>
+          </div>
+
+          <!-- Feature Card 3 -->
+          <div class="feature-card glass-card" id="feature-card-3">
+            <div class="feature-card-inner">
+              <div class="feature-icon-box icon-emerald">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <span class="feature-tag">Enterprise Shield</span>
+              <h3 class="feature-title">Fortress-Grade Governance</h3>
+              <p class="feature-description">
+                Retain complete data sovereignty. Includes end-to-end cryptographic audit trails, granular role-based access, automated red-teaming, and isolated air-gapped sandboxes.
+              </p>
+              <div class="feature-highlight">
+                <svg class="spark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                <span>SOC2 Type II &bull; HIPAA &bull; GDPR Ready</span>
+              </div>
+            </div>
+            <div class="card-border-glow"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Ready to Automate Your Future?</h2>
+          <p class="section-lead">
+            Talk to an AI solutions architect, request a customized enterprise proof-of-concept, or start building right away.
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          
+          <!-- Contact Info Details Card -->
+          <div class="contact-info-card glass-card">
+            <h3 class="info-card-title">Connect with NexusAI</h3>
+            <p class="info-card-desc">
+              Whether you need technical documentation, custom on-premise deployments, or custom enterprise SLAs, our core engineering team is here to assist.
+            </p>
+
+            <div class="contact-details-list">
+              <div class="detail-item">
+                <div class="detail-icon-circle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label">Email Us</span>
+                  <a href="mailto:support@nexusai.tech" class="detail-link">support@nexusai.tech</a>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon-circle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label">Direct Line</span>
+                  <a href="tel:+18005550199" class="detail-link">+1 (800) 555-0199</a>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon-circle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label">Headquarters</span>
+                  <span class="detail-text">500 Howard Street, Suite 400<br>San Francisco, CA 94105</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Operational Status Pill -->
+            <div class="status-box">
+              <span class="status-pulse-dot"></span>
+              <div class="status-box-text">
+                <strong>System Health: 100% Operational</strong>
+                <span>All 18 global cloud regions online</span>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links-wrapper">
+              <span class="social-label">Follow our updates:</span>
+              <div class="social-row">
+                <a href="#hero" class="social-btn" aria-label="NexusAI on Twitter/X">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="#hero" class="social-btn" aria-label="NexusAI on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#hero" class="social-btn" aria-label="NexusAI on LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Functional Contact Form -->
+          <div class="contact-form-card glass-card">
+            <form id="contact-form" class="contact-form" novalidate>
+              <h3 class="form-title">Send Us a Message</h3>
+              <p class="form-subtitle">Fill in the fields below and we'll respond within 24 hours.</p>
+
+              <!-- Name Field -->
+              <div class="form-group" id="group-name">
+                <label for="contact-name" class="form-label">Full Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input 
+                    type="text" 
+                    id="contact-name" 
+                    name="name" 
+                    class="form-input" 
+                    placeholder="e.g. Alex Morgan" 
+                    autocomplete="name" 
+                    required
+                  >
+                  <span class="input-focus-line"></span>
+                </div>
+                <span class="field-error" id="error-name" role="alert">Please enter your full name.</span>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group" id="group-email">
+                <label for="contact-email" class="form-label">Work Email <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input 
+                    type="email" 
+                    id="contact-email" 
+                    name="email" 
+                    class="form-input" 
+                    placeholder="alex@enterprise.com" 
+                    autocomplete="email" 
+                    required
+                  >
+                  <span class="input-focus-line"></span>
+                </div>
+                <span class="field-error" id="error-email" role="alert">Please enter a valid email address.</span>
+              </div>
+
+              <!-- Subject / Inquiry Category -->
+              <div class="form-group" id="group-subject">
+                <label for="contact-subject" class="form-label">Inquiry Type</label>
+                <div class="select-wrapper">
+                  <select id="contact-subject" name="subject" class="form-select">
+                    <option value="enterprise-poc">Enterprise Proof of Concept</option>
+                    <option value="agent-orchestration">Custom Agent Development</option>
+                    <option value="partnership">Partner &amp; Integrations</option>
+                    <option value="general">General Questions</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group" id="group-message">
+                <div class="label-row">
+                  <label for="contact-message" class="form-label">Your Message <span class="required">*</span></label>
+                  <span class="char-count" id="char-counter">0 / 500</span>
+                </div>
+                <div class="input-wrapper">
+                  <textarea 
+                    id="contact-message" 
+                    name="message" 
+                    class="form-textarea" 
+                    rows="4" 
+                    placeholder="Tell us about your team's workflow requirements and project timeline..."
+                    maxlength="500" 
+                    required
+                  ></textarea>
+                  <span class="input-focus-line"></span>
+                </div>
+                <span class="field-error" id="error-message" role="alert">Please write a message (at least 15 characters).</span>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-actions">
+                <button type="submit" class="btn btn-lg btn-primary btn-submit" id="contact-submit-btn">
+                  <span class="btn-spinner" id="btn-spinner" aria-hidden="true"></span>
+                  <span class="btn-text" id="btn-text">Send Message</span>
+                  <svg class="icon-send" id="icon-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Form Success Feedback Banner -->
+              <div class="form-alert form-success" id="form-success-banner" role="alert" style="display: none;">
+                <div class="alert-icon">✓</div>
+                <div class="alert-content">
+                  <strong>Message Sent Successfully!</strong>
+                  <p>Thank you for reaching out. Our engineering team will review your requirements and respond within 24 hours.</p>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="section-container footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="#hero" class="nav-brand footer-logo" aria-label="NexusAI">
+            <div class="logo-icon-wrapper">
+              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <span class="brand-text">Nexus<span class="accent-text">AI</span></span>
+          </a>
+          <p class="footer-bio">
+            The next-generation autonomous AI orchestration platform. Empowering developers and enterprises to scale intelligent agent fleets with speed and confidence.
+          </p>
+          <div class="footer-tagline">Engineered with precision for modern engineering teams.</div>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4 class="footer-heading">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About Platform</a></li>
+              <li><a href="#features">Core Features</a></li>
+              <li><a href="#contact">Contact &amp; Demo</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Product</h4>
+            <ul class="footer-links">
+              <li><a href="#features">Autonomous Swarms</a></li>
+              <li><a href="#features">Neural Speed Cache</a></li>
+              <li><a href="#features">Enterprise Security</a></li>
+              <li><a href="#hero">Release Notes v3.0</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Stay Informed</h4>
+            <p class="newsletter-desc">Subscribe to our monthly autonomous systems engineering digest.</p>
+            <form class="newsletter-form" id="newsletter-form">
+              <input type="email" class="newsletter-input" id="newsletter-email" placeholder="Enter your work email" required>
+              <button type="submit" class="btn btn-sm btn-primary newsletter-btn" aria-label="Subscribe">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </form>
+            <span class="newsletter-feedback" id="newsletter-feedback"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> NexusAI Technologies, Inc. All rights reserved.
+        </p>
+        <div class="legal-links">
+          <a href="#privacy">Privacy Policy</a>
+          <span class="divider">&bull;</span>
+          <a href="#terms">Terms of Service</a>
+          <span class="divider">&bull;</span>
+          <a href="#security">Security &amp; Compliance</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container for interactive JS feedback -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top-btn" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
